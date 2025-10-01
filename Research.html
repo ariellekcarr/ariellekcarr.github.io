@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head><link href="./resources/css/index.css" type="text/css" rel="stylesheet">
+  <title>Arielle Carr</title>
+</head>
+<body>
+<!-- Side navigation -->
+<div class="sidenav">
+	<a href="./index.html">Main</a>
+	<a href="./Research.html">Research</a>
+	<a href="./Papers.html">Papers</a>
+	<a href="./Students.html">Students</a>
+	<a href="./Teaching.html">Teaching</a>
+	<a href="./Activities.html">Activities</a>
+  </div>
+
+<div class="main">
+ <h1> Arielle Carr - Research</h1>
+
+ <section>
+I design mathematically rigorous algorithms to efficiently solve problems defined by increasingly larger data sets arising in a wide range of science and engineering applications by devising, analyzing, and implementing algorithmic innovations for numerical methods.  I base the design of these methods on a firm understanding of the characteristics of the underlying physical systems defining the data on which I run my methods, the theoretical underpinnings of the numerical techniques which the algorithms use and the advantages and limitations of the architecture on which I employ my methods. I work with established linear algebra and numerical techniques, such as preconditioning, iterative solvers (in particular, Krylov subspace methods), multigrid methods, discretization techniques (such as finite elements and differences), and model reduction (e.g., proper orthogonal decomposition, interpolatory model reduction, and principal component analysis), to develop practical strategies to make the solution of large-scale linear systems and eigenproblems tractable. I am particularly interested in how numerical methods can be innovated upon using new and emerging technologies such as high performance computing (HPC), machine learning (ML), and quantum computing (QC).
+
+</section>
+
+<section>
+	<h1>Current Projects</h1>
+	<em>Interested students can contact me about working on one or more of the following active projects.</em>
+
+	<h2>Theoretical Analysis of Krylov Methods</h2>
+	<p>Knowing the theoretical properties of iterative methods provides insight in how well an approach may work, as well as how to choose parameters when using it. I have studied and developed convergence theory for well-known methods such as GMRES and algebraic multigrid (AMG) for special, but commonly occuring linear systems in science and engineering. Special topics in this area include adaptive restart strategies for methods such as GMRES, examining the choice in sparsity patterns when updating and reusing preconditioners for sequences of linear systems, and judiciously chosen recycle (sub)spaces for linear and eignesolvers.</p>
+
+	<h2>Algorithmic Design for High Performance Computing</h2>
+	<p> Iterative methods are extrememly popular, efficient, and effective methods for solving large linear systems and eigenvalue problems.  However, their efficiency can be compromised when implemented an HPC environment.  In some cases, this is due to the inherent nature of the algorithm - such as in the Krylov subspace recycling method, GCRO-DR.  In this method, an orthogonalization procedure is necessary to update the recycle space for a new system.  However, such a procedure can be very expensive in a parallel computing environment. Past and ongoing work aims to repurpose these algorithms so that they thrive, rather than fail, when using advancing HPC technologies. 
+	</p>
+
+	<h2>Accelerating the Numerical Solution of Linear Solvers in Climate Modeling</h2>
+	<p> Weather forecasting allows communities to make informed
+		decisions to protect people's health and safety against changing weather conditions. Currently, 
+		the most accurate forecast methodology used to describe the evolution of the atmosphere, 
+		numerical weather prediction (NWP), involves solving partial differential equations (PDEs) numerically, a computationally expensive approach. Recently, data-driven methods
+		have shown potential to significantly accelerate weather forecasting, but their accuracy 
+		still lags that of NWP. I am working on hybrid approaches to accelerate 
+		the NWP model by drawing on machine learning techniques when solving sequences of
+		large sparse linear systems, the primary computational cost of 
+		an NWP model.
+	</p>
+	
+	<h2>Translating Classical Linear Algebra to Quantum Linear Algebra</h2>
+	<p>Linear algebra is a fundamental component of QC (many say it is the "language of QC"), and expanding our understanding of quantum linear algebra (QLA) techniques through the lens of classical linear algebra will facilitate fluency in how and when we can use QLA to solve relevant and important optimization problems. Ongoing work in this project seeks to identify contexts in which classical linear algebra has a natural translation to QLA, in particular when solving intractable (via classical computing) optimization problems. More specifically, I aim to define whether classical linear algebra techniques remain robust in QLA and when executed on actual quantum computers. I am particuarly interested in an important and persistent issue in QC: the mitigation of conditioning of the problem, or its sensitivity to perturbation, specifically in the efficient solution of quantum linear systems.</p>
+
+	<h2>Mathematical Foundations of Machine Learning</h2>
+	<p>Beyond climate modeling, I am interested in the robust mathematical foundations of machine learning. I, and my students, have examined how numerical methods used in ML contexts such as deep learning and data poisoning are used, and how known problems (such as slowed convergence behavior due to worker node failure or perturbations) ultimately impact the solution achieved (or not achieved). Broadly speaking, by investing in developing and understanding the mathematical underpinnings of ML, we build a resilient infrastructure that address evolving societal challenges. </p>
+	
+
+</section>
+</div>
+
+
+</body>
+</html>
